@@ -10,7 +10,28 @@
 </head>
 <body>
   <div id="container">
-
+    <h1>Let's do Up-Down! 👆👇</h1>
+    <section id="game-container">
+      <p class="explain">Speak number(1-100) on your microphone.👄</p>
+      <div class="mike-container">
+        <div class="mike-icon">
+          <i class="fas fa-microphone-alt"></i>
+        </div>
+      </div>
+      <div id="msg-container">
+        <div class="number">?</div>
+        <div class="msg">I'm Listening..</div>
+      </div>
+    </section>
   </div>
+
+  <!-- show when number matched -->
+  <div id="refresh">
+    <div class="refresh-container">
+      <strong>Game Over! 🤕</strong>
+      <button class="refresh-btn">Try again</button>
+    </div>
+  </div>
+  <script src="updown.js"></script>
 </body>
 </html>
