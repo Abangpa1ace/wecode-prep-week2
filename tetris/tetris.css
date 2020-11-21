@@ -9,7 +9,7 @@
 
 body {
   height: 100vh;
-  background: #f4f4f4;
+  background: #f2ecfd;
   padding: 40px;
 }
 
@@ -20,13 +20,52 @@ body {
 }
 
 #game-container {
-  width: 1000px;
+  width: 800px;
   padding: 50px;
-  border: 1px solid blue;
   margin: 20px auto;
   display: flex;
 }
 
 #tetris {
-  border: 1px solid red;
+  border: 3px solid black;
 }
+
+
+#refresh {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.msg-container {
+  width: 500px;
+  height: 300px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.refresh-btn {
+  border: none;
+  background: blueviolet;
+  padding: 5px;
+  border-radius: 5px 10px;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+
+
