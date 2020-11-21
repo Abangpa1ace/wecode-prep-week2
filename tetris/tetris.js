@@ -205,7 +205,7 @@ const PIECES = [
   [S, "green"],
   [T, "orange"],
   [O, "yellow"],
-  [L, "purlple"],
+  [L, "purple"],
   [J, "brown"],
   [I, "blue"]
 ]
@@ -407,7 +407,7 @@ function showGameOver() {
   gameOver = true;
   refresh.style.display = 'flex';
   refreshBtn.addEventListener('click', () => {
-    window
+    location.reload();
   })
 }
 
@@ -428,14 +428,12 @@ let gameOver = false;
 // }
 
 function drop() {
-  if(gameOver === false) {
-    setInterval(() => {
-      p.moveDown()
-    }, interval);
-  }
+  const moveDowns = setInterval(() => {
+    p.moveDown()
+    if (gameOver === true) {
+      clearInterval(moveDowns);
+    }
+  }, interval);
 }
 
 drop();
-
-
-
