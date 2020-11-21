@@ -13,9 +13,24 @@
     <h1>Let's do Tetris! 🧱</h1>
     <section id="game-container">
       <canvas id="tetris" width="300" height="600"></canvas>
-      <div id="score-container">Score: <span class="score">0</span></div>
+      <aside id="text-container">
+        <div class="score-container">Score: <span class="score">0</span></div>
+        <div class="explain">
+          <h3>How to play?</h3>
+          <ul class="explain-list">
+            <li>1. This is demo version of tetris.</li>
+            <li>2. You have to fill rows with blocks. (score +10)</li>
+            <li>3. You can move block left(⬅) and right(➡).</li>
+            <li>4. You can accelerate block(⬇).</li>
+            <li>5. You can rotate block(⬆).</li>
+            <li>6. If any column is full with blocks, game over.</li>
+          </ul>
+        </div>
+      </aside>
     </section>
   </div>
+
+  <!-- show when game over -->
   <div id="refresh">
     <div class="msg-container">
       <strong>Game Over! 🤕</strong>
