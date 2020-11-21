@@ -20,16 +20,48 @@ body {
 }
 
 #game-container {
-  width: 800px;
-  padding: 50px;
-  margin: 20px auto;
+  width: 1000px;
+  padding: 30px;
+  margin: 10px auto;
   display: flex;
+  justify-content: center;
 }
 
 #tetris {
   border: 3px solid black;
 }
 
+#text-container {
+  width: 450px;
+  margin-left: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+.score-container {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background: #c6b1ff;
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+
+.explain {
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background: #c6b1ff;
+  font-size: 16px;
+}
+
+.explain-list {
+  margin-top: 10px;
+  text-align: left;
+  line-height: 1.5em;
+}
 
 #refresh {
   width: 100%;
@@ -66,6 +98,3 @@ body {
   margin-top: 10px;
   cursor: pointer;
 }
-
-
-
