@@ -10,10 +10,17 @@
 </head>
 <body>
   <div id="container">
-    <h1>Let's do Tetris! 🧇</h1>
+    <h1>Let's do Tetris! 🧱</h1>
     <section id="game-container">
       <canvas id="tetris" width="300" height="600"></canvas>
+      <div id="score-container">Score: <span class="score">0</span></div>
     </section>
+  </div>
+  <div id="refresh">
+    <div class="msg-container">
+      <strong>Game Over! 🤕</strong>
+      <button class="refresh-btn">Try again</button>
+    </div>
   </div>
   <script src="tetris.js"></script>
 </body>
