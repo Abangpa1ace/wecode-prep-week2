@@ -20,13 +20,13 @@ body {
 }
 
 #container {
-  width: 1300px;
+  width: 700px;
   margin: 0 auto;
   text-align: center;
 }
 
 #game-container {
-  width: 1000px;
+  width: 80%;
   height: 100%;
   padding: 20px;
   margin: 20px auto;
@@ -49,7 +49,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: recording 4s linear infinite;
+  animation: recording 3s linear infinite;
 }
 
 .mike-icon {
@@ -63,7 +63,7 @@ body {
   border-radius: 50%;
   color: var(--color-border);
   background: #f2ecfd;
-  z-index: 10;
+  z-index: 5;
 }
 
 #msg-container {
@@ -106,6 +106,7 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 
 .refresh-container {
@@ -119,6 +120,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.refresh-answer {
+  border-bottom: 3px solid blueviolet;
 }
 
 .refresh-btn {
@@ -128,7 +134,7 @@ body {
   border-radius: 5px 10px;
   color: #ffffff;
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
