@@ -10,7 +10,35 @@
 </head>
 <body>
   <div id="container">
+    <h1>Let's do word-match! 📇</h1>
+    <div id="game-container">
+      <p class="hint-container">📍 Hint : <span class="hint"></span> 📍</p>
 
+      <!-- life display like hangman -->
+      <svg id="hangman" width="230px" height="350px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <line x1="10" x2="70" y1="330" y2="330" stroke="brown" stroke-width="8"/>
+        <polyline points="40 330 40 30 160 30 160 80" stroke="brown" stroke-width="8" fill="transparent"/>
+        <line x1="160" x2="110" y1="240" y2="290" stroke="green" stroke-width="4" class="life"/>
+        <line x1="160" x2="210" y1="240" y2="290" stroke="green" stroke-width="4" class="life"/>
+        <line x1="160" x2="110" y1="160" y2="140" stroke="green" stroke-width="4" class="life"/>
+        <line x1="160" x2="210" y1="160" y2="140" stroke="green" stroke-width="4" class="life"/>
+        <line x1="160" x2="160" y1="130" y2="240" stroke="green" stroke-width="4" class="life"/>
+        <circle cx="160" cy="105" r="25" stroke="green" stroke-width="4" fill="#ffe5e0" class="life"/>
+      </svg>
+
+      <div class="wrong-container">📎 Wrong Letter : <strong class="wrong-letter"></strong></div>
+      <div class="type-container"></div>
+      <p class="wrong-msg">That was already typed.</p>
+    </div>
   </div>
+
+  <!-- show when game end -->
+  <div id="refresh">
+    <div class="refresh-container">
+      <strong class="refresh-msg"></strong>
+      <button class="refresh-btn">Try again</button>
+    </div>
+  </div>
+  <script src="word.js"></script>
 </body>
 </html>
