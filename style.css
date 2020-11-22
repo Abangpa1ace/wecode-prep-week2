@@ -142,8 +142,7 @@ background: var(--background);
 }
 
 .game2::after {
-  content: 'Updating..';
-  color: red;
+  content: 'Word Match Game';
 }
 
 .game3::after {
