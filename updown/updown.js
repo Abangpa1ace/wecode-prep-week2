@@ -17,14 +17,13 @@ if ('speechSynthesis' in window) {
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   const recognition = new SpeechRecognition();
   recognition.lang = 'ko-KR'
-  // recognition.continuous = true;
 
   function speechRecognition() {
     recognition.onstart = () => {
       // console.log('recording')
       recognition.onresult = (event) => {
         // another way: recognition.addEventListener('result', function);
-        
+
         let transcript = event.results[0][0].transcript;
         let calledNum = parseInt(transcript, 10);
         recognition.stop();
@@ -54,7 +53,6 @@ if ('speechSynthesis' in window) {
         }
         // speech recognition continuously
         window.requestAnimationFrame(speechRecognition);
-        // another way: recognition.addEventListener('end', () => recognition.start());
       }
     };
 
