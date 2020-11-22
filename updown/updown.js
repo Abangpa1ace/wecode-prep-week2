@@ -43,6 +43,7 @@ if ('speechSynthesis' in window) {
             msg.innerText = 'Go Lower!'
           }
           else if (calledNum === answerNum) {
+            recognition.stop();
             msg.innerText = 'Correct!'
             refresh.style.display = 'flex';
             refreshAnswer.innerText = calledNum;
